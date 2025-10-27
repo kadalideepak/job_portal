@@ -20,7 +20,7 @@ exports.createApplication = (req, res) => {
   );
 };
 
-// Get All Applications
+// Get All Applicationss
 exports.getApplications = (req, res) => {
   Application.getApplications((err, results) => {
     if (err) return res.status(500).json({ error: err });
